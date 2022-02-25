@@ -1,0 +1,31 @@
+{
+    "work experience": [
+        {
+            "work-place": "Kronofogden",
+            "work-title": "Registration administrator",
+            "working years": "2020-",
+            "work-description": "Managing administrative services such as registering and handling recovery cases, as well as assessment of the right to recovery"
+        },
+        {       
+            "work-place": "EuroAccident",
+            "work-title": "Insurance administrator",
+            "working years": "2017-2020",
+            "work-description": "Managed administrative services such as handling invoices, and assessing and registering insurance matters"
+        }
+    ],
+
+    "education": [
+        {
+            "school": "Edugrade",
+            "program": "Systemutvecklare.NET",
+            "duration": "2021-",
+            "description": "Studying to be a system developer within the .NET framework. But also studying web development and machine learing among other things. Graduating in april 2023"
+        },
+        {
+            "school": "Umeå University",
+            "program": "Tränarprogrammet",
+            "duration": "2012-2015",
+            "description": "Studied sports medicine, sports psychology and sports physiology"
+        }
+    ]
+}
