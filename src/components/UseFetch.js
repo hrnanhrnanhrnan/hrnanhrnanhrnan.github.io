@@ -13,7 +13,7 @@ export const useFetch = (url, object) => {
             fetch(url,
                     {
                         object : {
-                        }
+                    }
                 })
             .then((response) => {
                 if(response.ok && isMounted) {
@@ -27,7 +27,7 @@ export const useFetch = (url, object) => {
             }).catch(error => {
                 setError(error.message)
             })
-        }, 350);
+        }, 50);
 
         return () => {
             isMounted = false

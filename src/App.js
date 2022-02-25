@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import {ModalComponent} from "./components/Modal.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
+const bodyEl = document.getElementById("body-el")
 
 export const App = () => {
   const [backgroundColor, setBackground] = useState("bg-dark")
@@ -16,10 +17,12 @@ export const App = () => {
     if (backgroundColor === "bg-dark") {
       setBackground("bg-light")
       setTextColor("text-dark")
+      bodyEl.className = "bg-light"
     }
     else {
       setBackground("bg-dark")
       setTextColor("text-light")
+      bodyEl.className = "bg-dark"
     }
   }
 

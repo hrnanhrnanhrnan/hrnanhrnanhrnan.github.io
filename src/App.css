@@ -37,6 +37,7 @@ h1 {
 .card {
   opacity: 80%;
   transition: 1s ease;
+  border: 1px solid var(--main-color);
 }
 
 .card:hover {
@@ -46,6 +47,7 @@ h1 {
 .con {
   animation: drop 1s ease;
   margin-top: 3.5vh;
+  padding-bottom: 5vh;
 }
 
 @keyframes drop {
