@@ -28,7 +28,7 @@ export const App = () => {
 
   return (
     <div className={backgroundColor} id="app">
-      <Router basename="/">
+      <Router basename="/hrnanhrnanhrnan.github.io">
         <NavbarComponent onclick={changeBackground} />
           <Routes>
             <Route path="/" element={<IntroComponent background={backgroundColor} text={textColor}/>} />
