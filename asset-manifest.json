@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2163548d.css",
-    "main.js": "/static/js/main.48b890fd.js",
+    "main.css": "/static/css/main.86eb3e6a.css",
+    "main.js": "/static/js/main.1cd596e0.js",
     "static/media/undraw_programming_re_kg9v.svg": "/static/media/undraw_programming_re_kg9v.0b1a0dfadc4292ccae37c9094cc017ee.svg",
     "static/media/undraw_building_blocks_re_rwls.svg": "/static/media/undraw_building_blocks_re_rwls.a1f05d29aef685d3d26b23eefd241d79.svg",
     "static/media/undraw_personal_info_re_ur1n.svg": "/static/media/undraw_personal_info_re_ur1n.0fe8b217a8197908744a74829d60134c.svg",
@@ -9,11 +9,11 @@
     "static/media/undraw_welcoming_re_x0qo.svg": "/static/media/undraw_welcoming_re_x0qo.eb6c9c3c9d3b4710ff4a6026a37c39ce.svg",
     "static/media/undraw_close_tab_re_4cj6.svg": "/static/media/undraw_close_tab_re_4cj6.d012487ca3e516fb8000dc1e4a5cd1e2.svg",
     "index.html": "/index.html",
-    "main.2163548d.css.map": "/static/css/main.2163548d.css.map",
-    "main.48b890fd.js.map": "/static/js/main.48b890fd.js.map"
+    "main.86eb3e6a.css.map": "/static/css/main.86eb3e6a.css.map",
+    "main.1cd596e0.js.map": "/static/js/main.1cd596e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2163548d.css",
-    "static/js/main.48b890fd.js"
+    "static/css/main.86eb3e6a.css",
+    "static/js/main.1cd596e0.js"
   ]
 }
