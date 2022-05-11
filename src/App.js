@@ -3,7 +3,7 @@ import { NavbarComponent } from "./components/Navbar.js";
 import { IntroComponent } from "./components/Intro.js";
 import { PortfolioComponent } from "./components/Portfolio.js";
 import { CvComponent } from "./components/Cv.js";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import {HashRouter as Router, Route, Routes} from "react-router-dom"
 import {ModalComponent} from "./components/Modal.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
