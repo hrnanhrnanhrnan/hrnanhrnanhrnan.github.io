@@ -34,6 +34,7 @@ export const App = () => {
             <Route path="/" element={<IntroComponent background={backgroundColor} text={textColor}/>} />
             <Route path="/cv" element={<CvComponent background={backgroundColor} text={textColor}/>} />
             <Route path="/portfolio" element={<PortfolioComponent background={backgroundColor} text={textColor}/>} />
+            <Route path="#" element={<IntroComponent background={backgroundColor} text={textColor}/>}/>
           </Routes>
       </Router>
       <ModalComponent/>
