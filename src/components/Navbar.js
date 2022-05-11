@@ -11,9 +11,9 @@ export const NavbarComponent = (props) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={NavLink} to="/">intro()</Nav.Link>
-              <Nav.Link as={NavLink} to="/cv">cv()</Nav.Link>
-              <Nav.Link as={NavLink} to="/portfolio">portfolio()</Nav.Link>
+              <Nav.Link as={NavLink} to="/">intro( )</Nav.Link>
+              <Nav.Link as={NavLink} to="/cv">cv( )</Nav.Link>
+              <Nav.Link as={NavLink} to="/portfolio">portfolio( )</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -38,10 +38,12 @@ h1 {
   opacity: 80%;
   transition: 1s ease;
   border: 1px solid var(--main-color);
+  
 }
 
 .card:hover {
   opacity: 100%;
+  cursor: pointer;
 }
 
 .con {

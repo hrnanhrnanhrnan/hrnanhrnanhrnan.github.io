@@ -28,13 +28,22 @@ export const PortfolioComponent = (props) => {
                     </>
                 ) : (
                     
-                    <Container fluid className="con">
+                    <Container className="con" id="portfolio-div">
                         <h1 className="display-4"><span className="display-3 highlighted-text">Projects</span> that <span className="highlighted-text">I've</span> been <span className="highlighted-text">working</span> on</h1>
                         <Row className="d-flex justify-content-center" xs={1} sm={2} md={2} lg={4}>
                             {
                                 data.map((repo) => (
                                     <Col key={repo.id} className="col">
-                                            <div className="card rounded-3 mb-3 pt-4">
+                                            <div id={repo["html_url"]} onClick={() => {
+                                                const a = document.createElement("a")
+                                                const div = document.getElementById("portfolio-div")
+                                                a.setAttribute("hidden", "true")
+                                                a.setAttribute("target", "_blank")
+                                                a.href = repo["html_url"]
+                                                div.appendChild(a)
+                                                a.click()
+                                                div.removeChild(a)
+                                            }} className="card rounded-3 mb-3 pt-4">
                                                 <img className="img-fluid" 
                                                     src={repo.name === "chrome_extension" ? chromeExtensionImg :
                                                         repo.name === "web-scraper" ? webScraperImg

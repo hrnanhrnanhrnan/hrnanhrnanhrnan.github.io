@@ -8,8 +8,6 @@ export const useFetch = (url, object) => {
     useEffect(() => {
         let isMounted = true
 
-        //Simulating a fetch that is taking some time to load
-        setTimeout(() => {
             fetch(url,
                     {
                         object : {
@@ -27,7 +25,7 @@ export const useFetch = (url, object) => {
             }).catch(error => {
                 setError(error.message)
             })
-        }, 50);
+
 
         return () => {
             isMounted = false
