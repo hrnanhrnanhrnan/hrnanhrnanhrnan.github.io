@@ -5,6 +5,7 @@ import webScraperImg from "../img/undraw_instant_analysis_re_mid5.svg"
 import buildingBlocksImg from "../img/undraw_building_blocks_re_rwls.svg"
 import programmingImg from "../img/undraw_programming_re_kg9v.svg"
 import { useFetch } from "./UseFetch"
+import { motion } from "framer-motion"
 const gitHubUrl = "https://api.github.com/users/hrnanhrnanhrnan/repos"
 const images = [chromeExtensionImg, webScraperImg, buildingBlocksImg, programmingImg]
 
@@ -17,7 +18,11 @@ export const PortfolioComponent = (props) => {
     }
 
     return (
-        <section className={`text-center pt-5 ${ props.backgrond } ${props.text}`}>
+        <motion.section
+        initial={{opacity: 0}}
+        animate={{opacity: 1,  transition:{duration: 0.1}}} 
+        exit={{opacity: 0}}
+         className={`text-center pt-5 ${ props.backgrond } ${props.text}`}>
             {
                 isLoading ? (
                     <>
@@ -63,6 +68,6 @@ export const PortfolioComponent = (props) => {
                     </Container>
                 )
             }
-        </section>
+        </motion.section>
     )
 }

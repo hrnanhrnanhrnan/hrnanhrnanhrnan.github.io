@@ -2,13 +2,18 @@ import React from "react"
 import { Container } from "react-bootstrap"
 import image from "../img/undraw_personal_info_re_ur1n.svg"
 import { useFetch } from "./UseFetch"
+import {motion} from "framer-motion"
 const url = "data.json"
 
 export const CvComponent = (props) => {
    const {data, isLoading, error} = useFetch(url, {headers:{'Content-Type': 'application/json', 'Accept': 'application/json'}})
 
     return (
-        <section className={`text-center pt-5 ${ props.backgrond } ${props.text}`}>
+        <motion.section 
+        initial={{opacity: 0}}
+        animate={{opacity: 1,  transition:{duration: 0.1}}} 
+        exit={{opacity: 0}}
+        className={`text-center pt-5 ${ props.backgrond } ${props.text}`}>
         {
             isLoading ? (
                     <>
@@ -57,6 +62,6 @@ export const CvComponent = (props) => {
         
         }
 
-        </section>
+        </motion.section>
     )
 }
